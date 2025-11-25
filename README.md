@@ -1,11 +1,11 @@
 # aRefCOCO Dataset - SaFiRe: Saccade-Fixation Reiteration with Mamba for Referring Image Segmentation [NeurIPS 2025]
 [![Paper](https://img.shields.io/badge/Paper-NeurIPS%202025-red)](https://arxiv.org/pdf/2510.10160)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/zhenjiemao/SaFiRe)
+[![SaFiRe Model](https://img.shields.io/badge/Model-SaFiRe-black?logo=github)](https://github.com/zhenjiemao/SaFiRe)
+[![aRefCOCO Dataset](https://img.shields.io/badge/Dataset-aRefCOCO-blue?logo=github)](https://github.com/zhenjiemao/aRefCOCO)
 [![Hugging Face Datasets](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue)](https://huggingface.co/datasets/zhenjiemao/aRefCOCO)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 Welcome to the official repository for the **aRefCOCO dataset** presented in "SaFiRe: Saccade-Fixation Reiteration with Mamba for Referring Image Segmentation."
-
 
 ## 👀 About Referential Ambiguity
 
@@ -31,7 +31,6 @@ In our paper, we present **aRefCOCO** (ambiguous RefCOCO), a test-only benchmark
 Below are more detailed statistics about the aRefCOCO benchmark:
 
 <div align="center">
-
 
 |  Split  | Objects | Sentences | Images | Avg. Words | Avg. Distractors |
 | :--------: | :-------: | :---------: | :------: | :----------: | :----------------: |
@@ -61,6 +60,8 @@ In summary, the **extended aRefCOCO dataset** now includes:
 ### Data Preparation
 
 1. Download [RefCOCO](http://bvisionweb1.cs.unc.edu/licheng/referit/data/refcoco.zip) and [RefCOCOg](http://bvisionweb1.cs.unc.edu/licheng/referit/data/refcocog.zip) along with the [arefcoco.json](https://github.com/zhenjiemao/SaFiRe/blob/master/arefcoco.json) in our repo.
+
+> If the above RefCOCO and RefCOCOg links are unavailable, you can also find the datasets here: [RefCOCO](https://drive.google.com/file/d/1mwVICSlwzPd2OMhzPRTJI6lhQh-JWiy_/view?usp=sharing)/[+](https://drive.google.com/file/d/1-_nge_JXmdcFcG76PEFM-pksWPunD5SB/view?usp=sharing)/[g](https://drive.google.com/file/d/194Dnf_3KjpYKuucXluwn5XJIO--0QrMZ/view?usp=sharing).
 
 2. Download images from [COCO](https://cocodataset.org/#download). Please use the first downloading link 2014 Train images [83K/13GB].
 
@@ -114,7 +115,6 @@ for batch in train_loader:
 
 Note that this dataloader can also be directly used for the original RefCOCO series by setting `args.data_set` to `refcoco`, `refcoco+` or `refcocog`.
 
-
 ## 🤗 Hugging Face Usage
 The dataset can also be conveniently loaded and explored using the [Hugging Face Datasets library](https://huggingface.co/docs/datasets), as illustrated below:
 ```python
@@ -142,7 +142,6 @@ print(f"Descriptions: {sample['descriptions']}")
 
 ## Acknowledgements
 We sincerely appreciate the contributions of the open-source community for their work on data processing and usage. The related projects are as follows: [ReMamber](https://github.com/yyh-rain-song/ReMamber), [LAVT](https://github.com/yz93/LAVT-RIS).
-
 
 ## Citations
 
