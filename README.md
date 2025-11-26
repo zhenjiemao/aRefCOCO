@@ -1,8 +1,10 @@
 # aRefCOCO Dataset - SaFiRe: Saccade-Fixation Reiteration with Mamba for Referring Image Segmentation [NeurIPS 2025]
-[![Paper](https://img.shields.io/badge/Paper-NeurIPS%202025-red)](https://arxiv.org/pdf/2510.10160)
+[![Project Page](https://img.shields.io/badge/Project-Page-green?logo=githubpages)](https://zhenjiemao.github.io/SaFiRe/)
+[![Paper](https://img.shields.io/badge/Paper-NeurIPS%202025-red?)](https://arxiv.org/pdf/2510.10160)
+[![arXiv](https://img.shields.io/badge/arXiv-paper-red?logo=arxiv)](https://arxiv.org/abs/2510.10160)
 [![SaFiRe Model](https://img.shields.io/badge/Model-SaFiRe-black?logo=github)](https://github.com/zhenjiemao/SaFiRe)
 [![aRefCOCO Dataset](https://img.shields.io/badge/Dataset-aRefCOCO-blue?logo=github)](https://github.com/zhenjiemao/aRefCOCO)
-[![Hugging Face Datasets](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-blue)](https://huggingface.co/datasets/zhenjiemao/aRefCOCO)
+[![aRefCOCO Dataset](https://img.shields.io/badge/Dataset-aRefCOCO-yellow?logo=huggingface)](https://huggingface.co/datasets/zhenjiemao/aRefCOCO)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 Welcome to the official repository for the **aRefCOCO dataset** presented in "SaFiRe: Saccade-Fixation Reiteration with Mamba for Referring Image Segmentation."
@@ -59,7 +61,7 @@ In summary, the **extended aRefCOCO dataset** now includes:
 
 ### Data Preparation
 
-1. Download [RefCOCO](http://bvisionweb1.cs.unc.edu/licheng/referit/data/refcoco.zip) and [RefCOCOg](http://bvisionweb1.cs.unc.edu/licheng/referit/data/refcocog.zip) along with the [arefcoco.json](https://github.com/zhenjiemao/SaFiRe/blob/master/arefcoco.json) in our repo.
+1. Download [RefCOCO](http://bvisionweb1.cs.unc.edu/licheng/referit/data/refcoco.zip) and [RefCOCOg](http://bvisionweb1.cs.unc.edu/licheng/referit/data/refcocog.zip) along with the [arefcoco.json](https://github.com/zhenjiemao/aRefCOCO/blob/master/arefcoco.json) in our repo.
 
 > If the above RefCOCO and RefCOCOg links are unavailable, you can also find the datasets here: [RefCOCO](https://drive.google.com/file/d/1mwVICSlwzPd2OMhzPRTJI6lhQh-JWiy_/view?usp=sharing)/[+](https://drive.google.com/file/d/1-_nge_JXmdcFcG76PEFM-pksWPunD5SB/view?usp=sharing)/[g](https://drive.google.com/file/d/194Dnf_3KjpYKuucXluwn5XJIO--0QrMZ/view?usp=sharing).
 
@@ -88,7 +90,7 @@ After downloading the dataset, the directory should look like this:
 ```
 
 ### Dataloader
-We provide an easy-to-use dataloader implemented in the [refdataset](https://github.com/zhenjiemao/SaFiRe/tree/master/refdataset) directory, as shown below:
+We provide an easy-to-use dataloader implemented in the [refdataset](https://github.com/zhenjiemao/aRefCOCO/tree/master/refdataset) directory, as shown below:
 ```python
 import argparse
 from refdataset import build_dataloader  
